@@ -1,5 +1,5 @@
 //don't forget to run reactivision
-
+float posX, posY;
 import TUIO.*;
 
 TuioProcessing tuioClient;
