@@ -4,7 +4,7 @@ import TUIO.*;
 
 TuioProcessing tuioClient;
 
-
+circle circleObject;
 
 float cursor_size = 15;
 float object_size = 60;
@@ -13,6 +13,7 @@ float scale_factor = 1;
 PFont font;
 
 void setup() {
+  circleObject = new circle();
   size(800, 600);
   noStroke();
   fill(0);
