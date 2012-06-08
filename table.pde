@@ -23,7 +23,7 @@ void setup() {
   //noLoop();
 
   hint(ENABLE_NATIVE_FONTS);
-  font = createFont("Arial", 18);
+  font = createFont("Helvetica", 12);
   scale_factor = height/table_size;
   tuioClient  = new TuioProcessing(this);
 }
