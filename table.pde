@@ -36,13 +36,14 @@ void draw() {
 
   Vector tuioObjectList = tuioClient.getTuioObjects();
   for (int i=0;i<tuioObjectList.size();i++) {
-    TuioObject tobj = (TuioObject)tuioObjectList.elementAt(i);
-    stroke(0);
-    fill(0);
+    TuioObject tobj = (TuioObject)tuioObjectList.elementAt(i); 
+    stroke(255,0,0);
+    strokeWeight(5);
+    noFill();
     pushMatrix();
     translate(tobj.getScreenX(width), tobj.getScreenY(height));
     rotate(tobj.getAngle());
-    rect(-obj_size/2, -obj_size/2, obj_size, obj_size);
+    ellipse(-obj_size/2, -obj_size/2, obj_size, obj_size);
     popMatrix();
     fill(255);
     text(""+tobj.getSymbolID(), tobj.getScreenX(width), tobj.getScreenY(height));
